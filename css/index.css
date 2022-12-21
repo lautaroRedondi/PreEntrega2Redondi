@@ -1,0 +1,269 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.primer-container {
+    background-image: url("../img/banner.png");
+    height: 495px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: local;
+}
+
+.segundo-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0% 20%;
+}
+
+.tercer-container {
+    background-color: gray;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.titulo>h2 {
+    font-family: 'Pacifico', cursive;
+}
+
+.logo {
+    font-family: 'Pacifico', cursive;
+}
+
+.titulo-tercer-container {
+    margin: 2% 0%;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.container-cartas {
+    display: flex;
+    justify-content: space-around;
+    font-size: 12px;
+    padding-bottom: 5%;
+}
+
+.carta {
+    background-color: white;
+    border-radius: 5%;
+    width: 30%;
+    padding: 4%;
+}
+
+.titulo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin: 5% 20%;
+}
+
+.titulo>p {
+    margin-top: 5%;
+}
+
+.navbar {
+    opacity: 80%;
+    padding: 0% 20%;
+}
+
+/*Login Page*/
+.form-login {
+    margin: 5% 20%;
+}
+
+.form-login>h3 {
+    margin-bottom: 3%;
+}
+
+.submit-button {
+    margin-top: 3%;
+}
+
+.form-group {
+    margin: 1% 0%;
+}
+
+/*OFERTAS*/
+.container-ofertas {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.container-ofertas .carta-oferta {
+    width: 300px;
+    border-radius: 5%;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    transition: all 0.25s;
+    background-color: rgba(132, 204, 188, 0.904);
+}
+
+.container-ofertas .carta-oferta:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container-ofertas img {
+    width: 330px;
+    height: 220px;
+}
+
+.carta-oferta>h4 {
+    text-align: center;
+    padding: 2%;
+}
+
+.carta-oferta p {
+    text-align: center;
+    padding: 2%;
+}
+
+/*SUCURSALES*/
+.mapa {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5% 5%;
+}
+
+h4 {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    padding: 0% 20%;
+}
+
+/*FOOTER*/
+footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 200px 10px;
+    grid-template-areas: 'a b'
+        'c c';
+    background-color: bisque;
+    padding-top: 3%;
+}
+
+.div-footer-uno {
+    grid-area: a;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.div-footer-dos {
+    grid-area: b;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-decoration: none;
+}
+
+.div-footer-uno>h2 {
+    width: 100%;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+}
+
+.div-footer-uno>p {
+    text-align: center;
+}
+
+.div-footer-dos>h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.div-footer-dos>ul {
+    list-style: none;
+}
+
+.div-footer-tres {
+    grid-area: c;
+    display: flex;
+    justify-content: center;
+    font-size: 7px;
+}
+
+.div-footer-dos a {
+    text-decoration: none;
+    color: black;
+}
+
+/*RESPONSIVE
+SMARTPHONE*/
+@media (max-width: 767px) {
+    .segundo-container {
+        display: flex;
+        justify-content: center;
+        margin: 0%;
+    }
+
+    .container-cartas {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .carta {
+        width: 90%;
+        padding: 5%;
+        margin: 2.5%;
+    }
+
+    .div-footer-tres>p {
+        text-align: center;
+    }
+
+    .container-ofertas {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+    }
+}
+
+/*RESPONSIVE
+TABLET*/
+@media (min-width: 768px) and (max-width:1023px) {
+    .segundo-container {
+        display: flex;
+        justify-content: center;
+        margin: 0%;
+    }
+
+    .container-cartas {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .carta {
+        width: 90%;
+        padding: 5%;
+        margin: 2.5%;
+    }
+
+    .div-footer-tres>p {
+        text-align: center;
+    }
+
+    .container-ofertas {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+    }
+}
